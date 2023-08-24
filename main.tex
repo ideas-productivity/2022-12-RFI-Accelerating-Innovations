@@ -1,0 +1,95 @@
+\documentclass[letterpaper,11pt]{article}
+\input{style}
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{doi}
+\usepackage{color}
+\definecolor{linkblue}{RGB}{0,0,180}
+% \definecolor{linkblue}{RGB}{0,0,140}
+\hypersetup{
+     colorlinks=true,
+     citecolor=linkblue,
+     filecolor=black,
+     linkcolor=linkblue,
+     urlcolor=linkblue
+}
+\newcommand{\reportdoi}[0]{10.2172/1846009}
+\newcommand{\PRDONE}{Develop next-generation tools to enhance developer productivity and software sustainability}
+\newcommand{\PRDTWO}{Develop methodologies and tools to comprehensively improve team-based scientific software development and use}
+\newcommand{\PRDTHREE}{Develop methodologies, tools, and infrastructure for trustworthy software-intensive science}
+\newcommand{\THEMEONE}{We need to consider both human and technical elements to better understand how to improve the development and use of scientific software.}
+\newcommand{\THEMETWO}{We need to address urgent challenges in workforce recruitment and retention in the computing sciences with growth through expanded diversity, stable career paths, and the creation of a community and culture that attract and retain new generations of scientists.}
+\newcommand{\THEMETHREE}{Scientific software has become essential to all areas of science and technology, creating opportunities for expanded partnerships, collaboration, and impact.}
+
+\begin{document}
+
+% \pagenumbering{roman}
+\pagestyle{empty}
+
+\input{narrative/abstract}
+
+\newpage
+% \input{narrative/cover}
+
+% \newpage
+% \setcounter{tocdepth}{4}
+% \tableofcontents 
+
+% \newpage
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\input{narrative/body}
+
+\appendix
+%\newpage
+% \section*{Bibliography and References Cited}
+%\bibliography{bibs/proposal,bibs/references,bibs/refs-part2,bibs/e4s,bibs/pier}
+\bibliography{bibs/proposal,bibs/references,bibs/refs-part2,bibs/e4s,bibs/pier,bibs/cited,bibs/ideas,bibs/proposal-deb}
+\bibliographystyle{plain} 
+
+% \newpage
+% \section{Facilities and Other Resources}
+
+% The following pages provide information about facilities and other resources of our collaborating institutions: SNL, ANL, LBNL, LLNL, LANL, ORNL, and the University of Oregon. 
+
+% \includepdf[pages=-]{facilities/SandiaFacilities.pdf}
+% \input{facilities/facilities-anl}
+% \input{facilities/facilities-lbnl.tex}
+% \includepdf[pages=-]{facilities/LLNL-facilities-resources.pdf}
+% \includepdf[pages=-]{facilities/ORNL-facilities-resources-doc.pdf}
+% \includepdf[pages=-]{facilities/facilities-uo.pdf}
+% \includepdf[pages=-]{facilities/LANLfacilities.pdf}
+
+% \newpage
+% \section{Equipment}
+% \input{equip/equip}
+
+% \newpage
+% \section{Data Management Plan}
+% \input{data/data}
+
+%%\newpage
+%%\section{Recruitment and Retention of Early Stage Investigators}
+%%\input{recruit/recruit-anl} 
+
+% \newpage
+% \section{Promoting Inclusive and Equitable Research (PIER) Plan}
+% \label{sect:pier}
+% \input{pier/pier}
+
+% \newpage
+% \section{Biographical Sketches}
+
+% \includepdf[pages=-]{BiosCnps/HerouxBiosketch.pdf}
+% \includepdf[pages=-]{BiosCnps/McInnesBiosketch2022.12.pdf}
+
+
+% \newpage
+% \section{Current and Pending Support}
+
+% \includepdf[pages=-]{BiosCnps/HerouxCurrentandPending.pdf}
+% {BiosCnps/McInnes.C_P.Support2022.12.pdf}
+
+\end{document}

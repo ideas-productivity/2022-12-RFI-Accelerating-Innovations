@@ -1,0 +1,190 @@
+% \noindent {\color{red} \Large \bf DRAFT: Do not distribute.  Dec 23, 9:30 am ET}
+
+\iffalse
+{\bf Definitions of trans-disciplinary research and multi-disciplinary research}
+
+Trans-disciplinary research involves the integration of knowledge and methods from multiple disciplines in order to address a complex problem or issue. It involves the collaboration of experts from diverse fields, who work together to find solutions to problems that cannot be solved by a single discipline.
+
+On the other hand, multi-disciplinary research involves the collaboration of researchers from different disciplines, but each researcher brings their own perspective and expertise to the problem being studied. In multi-disciplinary research, the focus is on bringing together different perspectives and approaches in order to gain a more complete understanding of the problem.
+
+In summary, trans-disciplinary research involves a more holistic approach to problem-solving, while multi-disciplinary research involves the integration of different perspectives on a problem.
+\fi
+
+\section*{The key roles of high-performance computing and advanced software in trans-disciplinary research}
+
+% {\color{red}{Please review/revise this first section ... Let's make sure that this effectively conveys our key introductory points.}}
+
+Investments by the U.S. Department of Energy (DOE) in research and development (R\&D) in high-performance computing (HPC)---including innovative hardware as well as cutting-edge algorithms, methodologies, software, and applications---have pushed the growth of computational science and engineering (CSE) as an essential driver of scientific and technological progress in conjunction with theory and experiment.  In fact, mathematics-based advanced computing has become a prevalent means of discovery and innovation in essentially all areas of science, engineering, technology, and society, and the DOE-funded research community has been at the core of this transformation.
+As we prepare to accelerate innovations in emerging technologies and lay the foundations for commercialization, {\bf we must fully prepare for trans-disciplinary collaboration across topics, teams, and institutions, where advanced software for HPC often plays critical roles}. 
+
+The next-generation innovation landscape is growing in complexity, where new discoveries will be driven through coupling of multiple disciplines into workflows. Tight integration across multiphysics/multiscale simulation and modeling, artificial intelligence and machine learning (AI/ML), and high-performance data analytics is a vision for DOE efforts such as the Integrated Research Infrastructure~\cite{brown-ascac2021,ascr-iri-taskforce2021}. Not only are we innovating within disciplines; the interfaces across disciplines will also be an active research space.  
+{\bf Indeed, we expect that advanced software and HPC will play key roles in advancements in \emph{all ten} of the key technology areas listed in the RFI---and all such software must be of high quality to ensure the trustworthiness of computational results}. 
+This trans-disciplinary R\&D requires a science, technology, engineering, and mathematics (STEM) workforce whose members have training across a broad spectrum of math, science, and engineering, including {\bf training on scientific software practices needed for collaboration within and across diverse multi-institutional teams, with emphasis on advanced computing environments and workflows, including newly emerging AI/ML technologies}. Another aspect of trans-disciplinary R\&D is that all teams need some members who have broad knowledge of multiple disciplines, so that they can see topical connections, facilitate effective communication among team members, and produce key insights for collaborative possibilities.  
+
+However, educational programs in STEM topics---even in graduate-level computer science, applied mathematics, and diverse domains of computational science and engineering---typically do not adequately prepare students with even basic scientific software skills (such as revision control and automated testing). These basic software skills are a critical foundation for more advanced topics needed for collaboration across teams of teams (such as Git workflows, APIs and documentation, code style standards, and code review), which are central to R\&D in large-scale computational science, where software is the means of encapsulating expertise and functionality for reuse across the community.  
+
+This response addresses questions \#3 and \#5 of the
+\href{https://www.federalregister.gov/documents/2022/11/08/2022-24250/accelerating-innovations-in-emerging-technologies}{DOE RFI on Accelerating Innovations in Emerging Technologies}: 
+
+\begin{quote} 
+{\bf (\#3) What new opportunities could be realized by combining two or more of the ten key technologies to accelerate the development of innovative products?}
+\end{quote}
+For this question, we consider the combination of using AI tools to generate high-performance computing software built on top of specialized performance portability libraries.  
+\begin{quote} 
+{\bf (\#5) To prepare for future industries, what opportunities are there for ensuring a robust workforce related to the ten key technologies?  What skills are needed for students preparing for a career, and which of these skills are not commonly available in educational institutions? }
+\end{quote}
+
+For this question, we focus on valuing high-quality, trustworthy scientific software and the skills needed to produce and maintain it, beyond just the novel contributions that AI technologies can bring.  For both questions, we respond from the perspective of HPC and advanced software as a key technology focus area of the RFI---and moreover as broadly underpinning trans-disciplinary R\&D in general, including the other technology focus areas of the RFI.
+
+
+\section*{Challenges in HPC software, workforce and training}
+
+\iffalse
+Traditional simulation and modeling continue to drive exponentially increasing demand for HPC due to requirements for higher resolution, increased fidelity, and multiphysics/multiscale coupling; at the same time, new HPC workloads are also emerging. The explosion of data from sensors, detectors, accelerators, microscopes, telescopes and sequencers is overwhelming local computing capabilities, as well as scientists’ ability to move, manage, store and analyze the data. New communities and large-scale collaborations developing around these experimental instruments require novel modes of interacting with HPC systems. For example, application teams incorporating large-scale data often have complex software dependencies requiring specific versions and software instances, which must be validated and tested before use. The teams typically have complex workflow requirements, with a scientific pipeline potentially starting and ending outside a computational facility, meaning workflow and scheduler software become eminently important. Furthermore, the increasing use of artificial intelligence (AI) in both large-scale simulations and experimental data analysis is driving changes in the traditional HPC software stack. For example, AI software products developed in industry are being ported and optimized for HPC systems, while new research is under way on AI software to serve the unique needs of science.
+\fi
+
+Scientific software is broadly recognized as a cornerstone of sustained collaboration and scientific advances~\cite{siam-cse18,pitac05,CSESSP,
+SoftwareProductivityWorkshopReport14}.  However, disruptive changes in computer architectures and the complexities of tackling new frontiers in extreme-scale modeling, simulation, and analysis, especially in the context of trans-disciplinary research, present daunting challenges to the productivity of software developers and the sustainability of software artifacts.
+Recent community reports have expressed the imperative to firmly embrace the fundamental role of open-source scientific software as a valuable research product and cornerstone of collaboration—and thus to increase direct investment in the software itself, not just as a byproduct of other research~\cite{ASCAC_report,Hettrick2016,KeyesTaylor2011,KeyesMcInnesWoodwardEtAl13,GroppHarrisonEtAl2016}.
+The report, {\em A multipronged approach to building a diverse workforce and cultivating an inclusive professional environment for DOE high-performance computing}~\cite{ECP-broader-engagement:2021-DOE-RFI}, submitted in December 2021 to the \href{https://www.energy.gov/science/articles/department-energy-releases-request-information-software-stewardship}{DOE Request for Information on Software Stewardship}, explains workforce and training needs through a lens of expanding diversity, equity, and inclusion and introduces work underway within the multipronged ECP Broadening Participation Initiative~\cite{ecp-broadening-participation-website2022,ECP-broader-engagement:2021-DOE-RFI}---a multilab collaboration to expand the pipeline and workforce for DOE high-performance computing.
+
+% \section*{Needs for training on scientific software practices}
+
+In contrast, this document explains needs for advances in workforce and training from a perspective of the fundamental role of scientific software as a valuable research product and cornerstone of collaboration.  We, as a community, have a mandate to fundamentally change how scientific software is designed, developed, and sustained, while tackling urgent challenges in workforce training and recruitment for the computing sciences~\cite{ascac-workforce2014, demographics-doe-labs, nstc2019, arafune2020, nstc2020, nsf-blueprint2021}.
+
+
+%{\bf IDEAS-ECP team in the Exascale Computing Project.} 
+{\bf Context in advanced computing.} We respond as members of the IDEAS-ECP team~\cite{ideas-ecp-report-2020,ideas-ecp-project-website}, which is part of the DOE Exascale Computing Project (ECP)~\cite{ecp-kothe-lee-qualters-2019,ecp-website}.   
+ECP teams overall are working toward scientific advances on emerging exascale platforms, where efforts target a diverse suite of applications in chemistry, materials, energy, Earth and space science, data analytics, optimization, AI, and national security~\cite{alexander_exascale_2020}. 
+% that will provide breakthrough solutions to address America’s most critical challenges in scientific discovery, energy assurance, economic competitiveness, and national security. 
+In turn, these applications build on software components, including programming models and runtimes, mathematical libraries, data and visualization packages, and development tools~\cite{osti_1888898,SWEcosystems:NCS2021} that comprise the Extreme-scale Scientific Software Stack (E4S)~\cite{e4s-webpage}. E4S represents a portfolio-driven effort to collect, test, and deliver the latest in reusable open-source HPC software products, as driven by the common needs of applications.  
+ECP's aggressive goals require intensive development activities on the part of both scientific applications and the supporting software tools and technologies.  Developers must adapt to and anticipate new computer architectures and scale their codes to levels not previously possible, often also requiring new algorithms and approaches within the software.  The role of IDEAS within the ECP is to help ease the challenges of software development in this environment, and to help the development teams ensure that DOE investment in the exascale software ecosystem is as productive and sustainable as possible.  Thus, we are collaborating with the ECP community to mitigate technical risks by building a firmer foundation for reproducible, sustainable science.
+
+While we emphasize the needs of advanced computing environments, including exascale architectures and beyond, workforce and training challenges related to high-quality software apply to computational work at all scales, given the universal need to ensure the quality and integrity of scientific discoveries based on simulation and analysis. 
+\iffalse
+  
+{Fostering a culture of software quality.}
+Every scientific software team strives to produce high-quality software, but other goals compete for time and resources.  ECP has provided funding, guidance, recognition and support for teams to focus on software quality.  Among many investments, the IDEAS-ECP project~\cite{ideas-ecp-report-2020,ideas-ecp-project-website} within ECP supports product teams with training and resources to improve developer productivity and software sustainability, as key aspects of improving overall scientific productivity and helping to ensure confidence in scientific results.  We will continue to support teams in their efforts to improve software quality, and we will continue to emphasize the importance of software quality in future efforts. The PESO plan focuses on how to use our ECP experience to continue fostering a culture of software quality and to continue to improve the quality of the software we deliver.
+\fi
+
+\section*{Multipronged strategy to advance scientific productivity through better scientific software}
+
+The document~{\em Advancing Scientific Productivity through Better Scientific Software: Developer Productivity and Software Sustainability Report} \cite{ideas-ecp-report-2020}
+summarizes technical and cultural challenges in scientific software productivity and sustainability, and introduces work by the IDEAS-ECP project to foster and advance software productivity and sustainability for extreme-scale CSE. IDEAS goals are to qualitatively change the culture of extreme-scale CSE and to provide a foundation (through software productivity methodologies and an extreme-scale software ecosystem) that enables transformative and reliable next-generation predictive science and decision support. {\bf We use an integrated process improvement approach that consists of (a) curating methodologies and educational resources, (b) establishing software communities, (c) providing opportunities for peer knowledge sharing and training,  and (d) fostering cross-organization informal dialogue to incentivize community-building and a regular cadence of communication.} This multipronged strategy drives our efforts toward achieving a diverse and inclusive trans-disciplinary research culture.
+
+\iffalse
+Because we are partnering throughout the ECP community (applications and software technologies teams, as well as teams focusing on hardware and integration at DOE computing facilities), critical to our approach is first respecting the requirements of teams to make progress on scientific and software goals and then helping them identify and deploy improved practices toward their goals. This strategy is especially important for ECP, which has an ambitious schedule, where teams must both deliver capabilities and improve software practices simultaneously. To assure providing true value to teams, we must carefully understand their requirements, including requirements for programmer productivity and software sustainability, and then facilitate improvements that deliver measurable positive impact soon after adoption. This approach promotes continuous technology refreshment~\cite{millerCTR_bssw_blog2019}, so that teams can improve software practices to reduce technical debt while ensuring continued scientific success.
+\fi
+
+\subsection*{Curating methodologies and educational resources}
+We use a multifaceted approach to develop, customize, curate, and deploy best practices as a fundamental way to improve software sustainability and programmer productivity. This work requires distilling the collective understanding of team and community members with many years of valuable experience in designing and producing high-quality, reusable HPC scientific software.  This experience, when combined with knowledge obtained from the broader software engineering community, has provided a foundation for focused discussion, distillation, and development of a large and growing collection of resources for scientific software teams, including topics such as agile processes, collaboration via revision control workflows, reproducibility, and scientific software design, refactoring, and testing. 
+Specific activities include:
+\begin{itemize}
+\item {\bf Establishing the Better Scientific Software (BSSw) website}~\cite{www:bssw.io} as a hub for sharing information on practices to improve software productivity and sustainability. Readers benefit from blog articles, curated content, and event information contributed by over 250 international community members~\cite{www:bssw.io-contributors}, covering a wide range of topics relating to scientific software planning, development, performance, reliability, collaboration, and skills~\cite{www:bssw.io-year-in-review2021,www:bssw.io-year-in-review2020,www:bssw.io-year-in-review2019}.
+\item {\bf Devising Productivity and Sustainability Improvement Planning (PSIP)}, a light\-weight, iterative workflow where teams incrementally and iteratively upgrade software practices\cite{Heroux:2020:LSP,osti_1884442}. Teams are now more productively tackling science goals through PSIP advances in areas such as software builds, testing, refactoring, revision control, documentation, and coding standards~\cite{zamora-psip-bssw-blog2018,dubey-psip-bssw-blog2019,hdf5-psip-bssw-blog2020}. 
+\item {\bf Advancing team of teams concepts to strengthen collaborations within the community}~\cite{osti_1881691,TeamOfTeams,10.1007/978-3-030-22338-0_39}, with emphasis on improving connections among the many multi-institutional teams that contribute to the Extreme-Scale Scientific Software Stack (E4S)~\cite{e4s-webpage}.
+\end{itemize}
+
+
+\subsection*{Establishing software communities}  
+Self-organizing software communities, including developers and users of related technologies, who deeply understand their own requirements and priorities, are well positioned to determine effective strategies for collaboration and coordination~\cite{CSCCE-website}.  Leveraging involvement in ECP software ecosystem activities as well as experience in defining and deploying best practices in software engineering for computational science, members of the IDEAS-ECP project are devising resources~\cite{sdk-tools} to help teams prepare for and participate in ECP software ecosystems and also to increase trust in computational results.
+
+\begin{itemize}
+\item {\bf Software Development Kits (SDKs)} establish collaborative structures for product communities. The SDK approach grew out of the original IDEAS xSDK~\cite{xSDKFoundations,yang2021xsdk,xsdk:homepage,xSDK-community-package-policies2016} to provide cross-team collaboration among math libraries teams by design. The activities conducted within the SDKs have been effective at accelerating design space exploration and making compatible collections of libraries and tools that benefit users, facilities, and the product development teams themselves. 
+SDKs also establish community software policies~\cite{yang2019building,xsdk-policies:github} to advance the quality, usability, and interoperability of related software technologies, while supporting autonomy of diverse teams that naturally have different drivers and constraints. 
+
+\item {\bf Code Analysis and mining Tools (CAT) SDK}~\cite{cat-sdk:homepage} is the most recent contribution to SDK community building. CAT-SDK---a productized suite of analysis tools (including those for analyzing repositories, source code, and pull requests)---enables software teams to gain insight into the day-to-day programming aspects of projects in order to help understand and improve development processes. 
+
+\item {\bf Extreme-scale Scientific Software Stack (E4S)}~\cite{e4s-webpage,heroux2020e4s} is a curated stack that incorporates the various topical SDKs (including programming models and runtimes, math libraries, data and visualization libraries, and development tools) and relies on the Spack software management ecosystem~\cite{spack:homepage}.  E4S facilitates the combined use of independent software packages by application teams, while also improving transparency and reproducibility of computational results. 
+
+\end{itemize}
+
+
+\subsection*{Providing opportunities for peer knowledge sharing and training}
+Central to the IDEAS-ECP project are multipronged efforts that help grow and mobilize a dynamic community to improve software quality, productivity, and sustainability. Our goal is to establish a "virtuous cycle" in which widespread awareness of the importance of software quality and related issues, in turn promotes sharing, discussion, and refinement of practices and resources for producing better scientific software. Specific activities are: 
+
+\begin{itemize}
+\item  {\bf Producing the webinar series Best Practices for HPC Software Developers}~\cite{www:hpcbp,BPHTE18-HPC-BP,repo:webinar-process,hpcbp-first-five-years2021}.  Launched in 2016 in partnership with the DOE computing facilities ALCF, NERSC, and OLCF, the webinar series provides a venue for many topics in HPC scientific software development from practitioners throughout the international community.
+
+\item {\bf Creating and teaching tutorials on scientific software practices}, including topics of software testing, verification, revision control,  refactoring, agile processes, and more~\cite{www:bssw-tutorial}. We present important considerations and practices in scientific software development, typically based on "best practices" identified in the broader software engineering community, tailored and adapted to needs of the HPC scientific software community. 
+
+\item {\bf Launching the Better Scientific Software (BSSw) Fellowship Program}~\cite{www:bsswf} to give recognition and funding to leaders and advocates of high-quality scientific software.
+The main goal is to foster and promote practices, processes, and tools to improve developer productivity and software sustainability of scientific codes. BSSw Fellows are selected annually based on an application process that includes the proposal of a funded activity (\$25k) that promotes better scientific software.  We encourage diverse applicants at all career stages, ranging from students through early-career, mid-career, and senior professionals. Initiated in 2018 with DOE support, with NSF joining sponsorship in 2021, a total of 27 BSSw Fellows in the 2018--2023 cohorts have developed training materials (including presentations in the {\em HPC Best Practices} webinar series) on topics such as code reviews, software testing, planning, design, and team collaboration; 27 BSSw Honorable Mentions have received recognition through community engagement~\cite{www:bsswf-mof}.
+ 
+The BSSw Fellowship Program is helping to advance the culture and careers of research software engineers (RSEs)~\cite{us-rse-webpage}, whose work is central to the sustainment of scientific software---focusing community attention on RSE contributions and providing a larger stage to advance causes related to high-quality software~\cite{GodoyEtAl-CiSE2022}. Moreover, the program provides a pathway to introduce newcomers with strong software skills to the DOE community.  Extension and growth of the BSSw Fellowship Program, with broader integration throughout DOE offices that use advanced computing, would help to grow the community of people and training resources needed for trans-disciplinary research.
+
+\end{itemize}
+
+\subsection*{Fostering cross-organization informal dialogue} 
+We create opportunities for a regular cadence of informal cross-institutional dialogue and mechanisms to further build community by sharing lessons learned~\cite{bernholdt_ideas_outreach_blog2018}. 
+In CSE, most conferences, workshops, and journals focus on scientific results and advances in algorithms and methodologies that help create them. Fewer opportunities exist to discuss the process of developing software---which provides the foundation for CSE collaboration and scientific discoveries. Promoting and providing opportunities for such discussions to take place, through workshops and focused sessions within larger conferences, as well as other types of events, is a key part of the IDEAS outreach strategy. 
+Specific activities are: 
+
+\begin{itemize}
+\item {\bf Organizing BOFs, workshops, and other community events} to foster discussion of issues in scientific software development.  A growing number of scientific meetings "crowd source" portions of their content, allowing meeting participants to propose and organize sessions. We typically organize such
+sessions together with like-minded community members and invite a
+broad selection of speakers~\cite{www:ideas-events}. We advertise these events widely and create archives to capture the events for future reference (e.g., BOFs on software engineering for CSE at the SC and ISC conference series~\cite{SWE-CSE-bof-webpage}). We also organize standalone workshops that provide the opportunity for more in-depth interactions, notably the Collegeville Workshop on Scientific Software~\cite{Collegeville-workshop-series,CW2021-blog3}.
+
+\item {\bf Leading an ECP panel series on performance portability}.  
+As ECP project teams are working toward performance portability across emerging exascale architectures, we partnered with DOE computing facilities and the three focus areas of ECP (application development, software technology, and hardware and integration) to lead an online panel series considering common themes of algorithmic and data locality challenges~\cite{perfportpanel}.  Discussion focused on lessons learned, identifying gaps, and discovering opportunities for partnerships in work toward performance portability.
+
+\item {\bf Hosting a panel series on Strategies for Working Remotely}~\cite{10.1007/978-3-031-05544-7_30,swr-webpage}. In response to the COVID-19 pandemic and need for many in our community to transition to unplanned remote work, in spring of 2020 we launched the panel series {\em Strategies for Working Remotely}, which explores experiences transitioning from co-located and partially distributed teams to fully virtual teams, and teams of teams. Panelists have discussed challenges, lessons learned, and unforeseen benefits, as well as opportunities to work toward sustainable hybrid approaches for distributed team collaboration in HPC. 
+
+\item {\bf Hosting a webinar series on HPC Workforce Development and Retention}.  As part of the ECP Broadening Participation Initiative~\cite{ecp-broadening-participation-website2022,ECP-broader-engagement:2021-DOE-RFI}, in 2022 we initiated a webinar series as part of a multifaceted strategy to expand the pipeline and workforce for DOE high-performance computing~\cite{hpc-wdr-webinar-webpage}. Led by the multi-lab HPC Workforce Development and Retention Action Group, webinars have addressed topics such as ally skills, diversifying computing, mentoring, and normalizing inclusion by embracing difference. 
+
+\end{itemize}
+
+\subsection*{Holistic perspective on integrated process improvement}
+These synergistic activities are growing a community of practice to make software productivity and sustainability first-class concepts in (extreme-scale) scientific computing.  We are working toward a scientific software community culture that invests in and benefits from an explicit focus on developer productivity and software sustainability, adapting and adopting best practices from the broader software community and establishing our own contributions to these pursuits.  
+Likewise, complementary projects and community groups worldwide are responding to similar challenges in software for science, engineering, and research~\cite{KatzMcInnesEtAl2019}.
+
+The IDEAS-ECP multipronged strategy (to advance scientific productivity through better scientific software) is one that could be replicated in virtual organizations or in local and regional ecosystems, leveraging public and private institutional collaboration for commercialization of scientific software foundational research.
+
+
+\section*{Needs for the future}
+
+As described above, the IDEAS-ECP project has already been working to enhance skills of the workforce of scientific software developers as part of addressing growing needs in this area.  Efforts of this kind need to continue and expand to match the growing importance of advanced software and HPC to scientific discovery and technological advancement.  Moreover, we must improve our understanding of software development and use, especially in the context of next-generation science.
+ 
+The 2021 DOE Office of Advanced Scientific Computing Resarch (ASCR) basic research needs workshop on the Science of Scientific-Software Development and Use (SSSDU)~\cite{sssdu-workshop-website2021,sssdu-workshop-brochure2022,sssdu-workshop-report2022-preliminary} considered the needs of the community to better understand how scientific software is developed and used.  The discussions blended technical and human elements, resulting in many ideas for future directions in scientific software. Three priority research directions (PRDs) were identified:
+\begin{enumerate}
+    \item \textbf{\PRDONE{}}
+    \item \textbf{\PRDTWO{}}
+    \item \textbf{\PRDTHREE{}}
+\end{enumerate}
+
+\noindent
+Three cross-cutting themes also emerged:
+\begin{enumerate}
+    \item \textbf{\THEMEONE{}}
+    \item \textbf{\THEMETWO{}}
+    \item \textbf{\THEMETHREE{}}
+\end{enumerate}
+
+{\bf Using generative AI tools to expand communities and impact.}
+One promising research area that addresses RFI Questions \#3 and \#5 and cuts across the SSSDU workshop PRDs and themes is {\bf cultivating the use of emerging AI tools to lower the barriers for quickly producing clean and correct software source code}. Tools such as GitHub Copilot~\cite{copilot} are reducing the barriers to programming by lowering the learning curves and complexity of software development and testing.  Furthermore, these tools are able to generate code that calls special-purpose libraries such as Kokkos~\cite{kokkos}, which provides performance portability for HPC applications across modern CPU and GPU systems.  New users of Kokkos, a sophisticated C++ template meta-programming library, will be able to generate correct Kokkos code automatically, greatly reducing learning barriers and providing correct code.  Some skill is certainly needed to make sure the code is correct, but verification of AI-generated code (for product functionality and testing) should be much easier to accomplish than having to manually produce the code.
+
+More broadly, generative AI tools can be made aware of library and tool interfaces and emit source code that uses these interfaces. The efficacy of these tools improves with the use of best practices in sustainable software development, such as modular and interoperable components with consistent, well-tested interfaces.  Thus, by combining these AI tools with the corresponding incentivized use of best practices in sustainable software development, we expect that application codes can be more easily composed using domain-specific libraries and that workflow-oriented applications can be more easily created and supported, addressing some of the complexity that is inherent in these environments. 
+
+Introducing generative AI tools into scientific software development workflows and training will dramatically reduce the barriers to producing high-quality, high-performance software, permitting new community members to much more rapidly contribute their efforts to produce new applications, libraries, and tools.  The same AI tools will also greatly improve the quality of documentation and reduce the cost of creating it.
+Furthermore, the dramatic drop in the cost of producing high-quality software products and documentation will relatively increase the importance of the upstream software phases of requirements, analysis, and design.  Because producing and debugging source code will take less time, we will be able to afford to increase resources to make sure that software products better address scientific requirements and are better designed to aid scientists in the pursuit of new results.  We also will more easily be able to generate multiple variants of a software product as part of the design effort and obtain a better product, faster and cheaper.
+
+{\bf Increasing the impact of scientific software through increased focus on human elements.}
+The disruptive changes from generative AI tools are but one example of how a greater diversity of skills will be valued in future scientific software development projects.  More highly valued in the future will be skills of people who understand the fundamental science requirements a product must address, people who know how to communicate with users to elicit requirements, and people who understand core elements of software product design.  
+
+The anticipated reduction in the cost of creating software (by saving time in manually producing source code and debugging it) opens the door to increasing our focus on what products we will develop and how they are designed.  We expect that cognitive and social science principles, manifested in software development activities such as user experience, will be increasingly important and impactful in software quality.
+
+{\bf Expanding impact through communities.}
+Explicitly fostering community interaction via programmatic efforts and organization of scientific software developers will accelerate our ability to produce high-quality scientific software libraries and tools that in turn will accelerate scientific discovery.  Efforts such as the BSSw.io web portal, the BSSw Fellowship program, PSIP methodologies, and software product communities such as the Software Development Kits efforts in ECP, provide the foundation for improved interactions and community building.  All of these efforts and more will be needed to assure we are adapting and adopting new approaches to improving developer productivity, software sustainability, and the resulting impact of software on scientific discovery. 
+
+{\bf Planning for change.}
+The coming decade promises to be the most disruptive ever in terms of scientific software development and use.  Emerging generative AI tools, increased awareness of the importance of human elements in designing and developing effective software for science, and the emerging trans-disciplinary culture of broad collaboration means that we must introduce new ways to engage scientific software developers and increase and diversify our workforce.  New training approaches and materials are needed.  
+
+Planning for future change is just as important as incorporating new information into our software efforts.   We must certainly provide scientific software teams with the latest information to be effective and efficient in their work.  We must also plan for updating our approaches as new information emerges.  Planning for change is essential.
+
+\section*{Conclusion}
+Scientific software provides a foundation for almost all areas of scientific discovery.  Explicitly focusing on improved development and use of software will accelerate scientific discovery.  In this document, we have highlighted the importance of supporting improved practices, processes, and tools used to develop software.  In particular, we have emphasized how important it is to anticipate and embrace the coming impact of generative AI tools on the software development process.  Successful adaptation and adoption of AI-based tools and workflows will reduce the cost of creating and supporting software products and enable scientists to create applications from domain-specific libraries and to support complex workflow-based applications more easily.
+
+With the anticipated reduced cost of producing and supporting software products, we can and must expand our ability to focus on human elements that will better assure that our software can be developed and used by a more diverse community of scientists.  We can improve the training of scientists in the use of new software tools and processes, especially generative AI tools.  We can create intentional communities via programmatic efforts such as fellowships that recognize community members.  We can foster identity, career growth, and community recognition of people who have scientific software skills, such as members of the Research Software Engineering (RSE) community.
+
+Finally, even as we prepare to engage the scientific community through improvements in software development and use that are available now, we must plan for incorporating future changes that are coming.  Only by anticipating and preparing for future changes will we be able to keep pace with and contribute to the expected advances in how software is developed and used for scientific discovery.
+    
